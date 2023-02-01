@@ -180,4 +180,7 @@
         padding-left: 20px;
 
     }
+    input {
+        min-width: 50px;
+    }
 </style>
