@@ -55,7 +55,7 @@
         border: 1px solid transparent;
     }
     form {
-        overflow-x: auto;
+        overflow-x: scroll;
         
     }
 </style>

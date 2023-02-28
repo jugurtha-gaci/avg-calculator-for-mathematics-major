@@ -14,9 +14,9 @@
 </script>
 
 <template>
-    <div class="sidebar py-5 bg-dark px-4">
-        <div class="toggler d-sm-none d-block d-flex">
-            <div class="heading text-white">Mathematics</div>
+    <div class="sidebar py-3 bg-dark px-4">
+        <div class="toggler d-md-none d-block d-flex">
+            <div class="heading text-white">Mathematics ^^</div>
             <font-awesome-icon v-if="!sidebarShow" @click="toggleSidebar" class="i text-white ms-auto" icon="fa-solid fa-bars" />
             <font-awesome-icon v-if="sidebarShow" @click="toggleSidebar" class="i text-white ms-auto" icon="fa-solid fa-times" />
 
@@ -26,7 +26,7 @@
                 <h6 class="text-center text-white py-4 px-2">
                     Licence :
                 </h6>
-                <router-link :to="{name: 'licence/1'}">
+                <router-link @click="toggleSidebar" :to="{name: 'licence/1'}">
                     <div 
                         class="border shadow-sm p-3 small mb-2"
                         :class="active == 'licence/1' ? 'bg-light' : 'text-white'">
@@ -34,7 +34,7 @@
                         <strong>1 ére Année Licence</strong>
                     </div>
                 </router-link>
-                <router-link :to="{name: 'licence/2'}">
+                <router-link @click="toggleSidebar" :to="{name: 'licence/2'}">
                     <div 
                         class="border shadow-sm p-3 small mb-2" 
                         :class="active == 'licence/2' ? 'bg-light' : 'text-white'">
@@ -42,7 +42,7 @@
                         <strong>2 éme Année Licence</strong>
                     </div>
                 </router-link>
-                <router-link :to="{name: 'licence/3'}">
+                <router-link @click="toggleSidebar" :to="{name: 'licence/3'}">
                     <div 
                         class="border shadow-sm p-3 small mb-2"
                         :class="active == 'licence/3' ? 'bg-light' : 'text-white'">
@@ -56,7 +56,7 @@
                     Master : <small>Recherche Opérationnelle</small>
                 </h6>
             
-                <router-link :to="{name: 'master/ro/1'}">
+                <router-link @click="toggleSidebar" :to="{name: 'master/ro/1'}">
                     <div 
                         class="border shadow-sm p-3 small mb-2"
                         :class="active == 'master/ro/1' ? 'bg-light' : 'text-white'">
@@ -65,7 +65,7 @@
                     </div>
                 </router-link>
             
-                <router-link :to="{name: 'master/ro/2'}">
+                <router-link @click="toggleSidebar" :to="{name: 'master/ro/2'}">
                     <div 
                         class="border shadow-sm p-3 small mb-2"
                         :class="active == 'master/ro/2' ? 'bg-light' : 'text-white'">
