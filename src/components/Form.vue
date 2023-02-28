@@ -27,10 +27,10 @@
                             <input :class="_module.td.value > 20 && 'border-danger'" max="20" v-model="_module.td.value"  type="number" placeholder="TD" class="form-control border-none">
                         </td>
                         <td v-if="_module.hasTP">
-                            <input max="20" v-model="_module.tp.value"  type="number" placeholder="TP" class="form-control border-none">
+                            <input :class="_module.td.value > 20 && 'border-danger'" max="20" v-model="_module.tp.value"  type="number" placeholder="TP" class="form-control border-none">
                         </td>
                         <td :colspan="(_module.noTD && !_module.hasTP) ? 3 : 2">
-                            <input max="20" v-model="_module.examen.value" type="number" placeholder="Examen" class="form-control border-none">
+                            <input :class="_module.td.value > 20 && 'border-danger'" max="20" v-model="_module.examen.value" type="number" placeholder="Examen" class="form-control border-none">
                         </td>
                     </tr>
                 </tbody>
