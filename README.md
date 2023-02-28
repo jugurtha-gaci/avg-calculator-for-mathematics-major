@@ -1,29 +1,18 @@
-# calculator-app
+### Calculatrice de moyenne pour la spécialité mathématique, systéme LMD
 
-This template should help get you started developing with Vue 3 in Vite.
+**برنامج حساب المعدل الفصلي و السنوي لتخصص رياضيات نظام LMD**
 
-## Recommended IDE Setup
+---
+#### Méthode de calcul :
+- pour les modules qui n'ont pas de TP :
+> (examen * 0.6) + (td * 0.4)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- pour les modules qui ont un TP :
+> (examen * 0.6) + (td + tp) / 2  * 0.4
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Fait par : **Jugurtha**
 
-## Project Setup
+Université de bouira
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```

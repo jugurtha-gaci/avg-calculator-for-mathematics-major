@@ -1,0 +1,50 @@
+import Swal from "sweetalert2"
+export default class UE 
+{
+    constructor(_name) {
+        
+        this.name = _name
+
+        this.totalCredits = 0
+        this.creditsObtenu = 0
+
+        this.totalCoef = 0
+
+        this.modules = []
+        this.avg = 0
+    }
+
+    addModule(module) {
+        this.modules.push(module)
+        this.totalCoef += module.coef
+        this.totalCredits += module.credits
+
+    }
+    
+
+    calculateUEAvg() {
+        if(this.modules.length > 0) {
+
+            this.avg = 0
+            this.creditsObtenu = 0
+            for(const module of this.modules) {
+                if(module.td._value > 20)  {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Veuillez vérifier les données saisies',
+                    })
+                    return
+                }
+                const avgModule = module.calculateAvg()
+                if(avgModule >= 10) 
+                    this.creditsObtenu += module.credits
+    
+                this.avg += (avgModule * module.coef)
+            }
+                
+            this.avg /= this.totalCoef
+            if(this.avg >= 10) this.creditsObtenu = this.totalCredits
+        }
+    }
+}
