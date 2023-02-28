@@ -28,7 +28,7 @@ export default class UE
             this.avg = 0
             this.creditsObtenu = 0
             for(const module of this.modules) {
-                if(module.td._value > 20)  {
+                if(module.td._value > 20 || module.tp._value > 20 || module.examen._value > 20)  {
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
