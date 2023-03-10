@@ -41,7 +41,8 @@ export default [
         name: "TIC",
         unite: "Méthodologie",
         coef: 1,
-        credits: 2
+        credits: 2,
+        noTD: true
     },
     {
         name: "Physique 2",
