@@ -54,7 +54,7 @@
 </script>
 <template>
     <div>
-        <h5 class="special-heading px-2 text-center py-4 border shadow-sm mb-4 bg-light ">Troisième Année Licence Mathématique</h5>
+        <h5 class="special-heading px-2 text-center py-4 border shadow-sm mb-4 bg-light ">Licence 3 Mathématiques</h5>
         <div class="pb-5">
             <h5 class="pb-3">Premier Semestre :</h5>
             <Form :unites="program_s1" />
