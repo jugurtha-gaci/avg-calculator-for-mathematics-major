@@ -55,7 +55,7 @@
 </script>
 <template>
     <div>
-        <h5 class="special-heading px-2 text-center py-4 border shadow-sm mb-4 bg-light ">Premiére Anée Licence Mathématique + Informatique</h5>
+        <h5 class="special-heading px-2 text-center py-4 border shadow-sm mb-4 bg-light ">Licence 1 Mathématiques et Informatique</h5>
         <div class="pb-5">
             <h5 class="pb-3">Premier Semestre :</h5>
             <Form
