@@ -21,7 +21,7 @@ export default class Module
         const moyenne = this.noTD ? 
                         (+this.examen._value * this.coef) : 
                         (this.hasTP) ?
-                            ((+this.examen._value * 0.6) + (((+this.td._value + +this.tp._value) / 2) * 0.4)) 
+                            (+this.examen._value * 0.6) + ((+this.td._value + +this.tp._value) / 2) * 0.4
                             :
                             ((+this.examen._value * 0.6) + (+this.td._value * 0.4)) 
 
