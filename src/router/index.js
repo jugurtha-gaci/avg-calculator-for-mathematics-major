@@ -14,23 +14,23 @@ const router = createRouter({
       name: 'licence/1',
     },
     { 
-      path: 'licence/2', 
+      path: '/licence/2', 
       component: L2,
       name: 'licence/2',
     },
     { 
-      path: 'licence/3', 
+      path: '/licence/3', 
       component: L3,
       name: 'licence/3',
 
     },
     { 
-      path: 'master/ro/1', 
+      path: '/master/ro/1', 
       component: M1RO,
       name: 'master/ro/1',
     },
     { 
-      path: 'master/ro/2', 
+      path: '/master/ro/2', 
       component: M2RO,
       name: 'master/ro/2',
     },
