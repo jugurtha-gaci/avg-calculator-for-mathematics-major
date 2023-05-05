@@ -21,6 +21,7 @@ export default [
         name: "Analyse Numérique 2",
         unite: "Méthodologie",
         coef: 2, 
+        hasTP: true,
         credits: 4
     },
     {
