@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import L1 from './../pages/L1.vue'
 import L2 from './../pages/L2.vue'
 import L3 from './../pages/L3.vue'
@@ -6,7 +6,7 @@ import M1RO from "./../pages/M1RO.vue"
 import M2RO from "./../pages/M2RO.vue"
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes: [
     { 
       path: '/', 
