@@ -6,7 +6,7 @@ export default [
         credits: 7
     },
     {
-        name: "Algébre 3",
+        name: "Algébre 4",
         unite: "Fondamentale 1",
         coef: 3,
         credits: 5
