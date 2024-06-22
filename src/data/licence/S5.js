@@ -32,7 +32,7 @@ export default [
     {
         name: "Initiation à la didactique des mathématiques",
         unite: "Découverte",
-        coef: 2,
+        coef: 1,
         credits: 5,
         noTD: true
     },
