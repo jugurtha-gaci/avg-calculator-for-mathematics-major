@@ -18,12 +18,16 @@ export default class Module
 
     }
     calculateAvg() {
-        const moyenne = this.noTD ? 
-                        (+this.examen._value * this.coef) : 
-                        (this.hasTP) ?
-                            (+this.examen._value * 0.67) + ((+this.td._value + +this.tp._value) / 2) * 0.33
-                            :
-                            ((+this.examen._value * 0.67) + (+this.td._value * 0.33)) 
+        let moyenne = 0
+
+        if(this.noTD) 
+            moyenne = (+this.examen._value * this.coef)
+        
+        else if(this.hasTP) 
+            moyenne = (+this.examen._value * 0.67) + ((+this.td._value + +this.tp._value) / 2) * 0.33
+        
+        else
+            moyenne = ((+this.examen._value * 0.67) + (+this.td._value * 0.33)) 
 
         this.calculateCreditsObtenu(moyenne)
 
@@ -34,7 +38,8 @@ export default class Module
         this.creditsObtenu = 0
         console.log(this.td);
 
-        if(moyenne < 10) return 
+        if(moyenne < 10) return; 
+
         this.creditsObtenu = this.credits
     }
 
